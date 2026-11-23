@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "racha": {
+      "command": "node",
+      "args": ["/path/to/racha-mcp/dist/server.js"],
+      "env": { "RACHA_REPO": "." }
+    }
+  }
+}

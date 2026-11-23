@@ -1,0 +1,27 @@
+{
+  "name": "racha-mcp",
+  "version": "0.1.0",
+  "description": "Read-only MCP server that gives coding agents the state of a spec-first, ticket-driven repo",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "eval": "tsx eval/run.ts",
+    "start": "node dist/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  },
+  "type": "module",
+  "bin": {
+    "racha-mcp": "dist/server.js"
+  }
+}
